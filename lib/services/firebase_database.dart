@@ -1,0 +1,1 @@
+// all methods to access database from firebase

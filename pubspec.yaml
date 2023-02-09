@@ -35,6 +35,9 @@ dependencies:
   carousel_slider: ^4.2.1
   flutter_staggered_grid_view: ^0.6.2
   flutter_sticky_widgets: ^0.0.3
+  cloud_firestore: ^4.3.1
+  firebase_core: ^2.4.1
+  firebase_auth: ^4.2.5
   provider: ^6.0.5
 
 
@@ -65,29 +68,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/Instagram.png
-    - assets/images/Camera.png
-    - assets/images/IGTV.png
-    - assets/images/Messanger.png
-    - assets/images/OfficialIcon.png
-    - assets/images/Shape.png
-    - assets/images/Shape1.png
-    - assets/images/Like.png
-    - assets/images/LikeShade.png
-    - assets/images/WhiteLike.png
-    - assets/images/Home.png
-    - assets/images/HomeShade.png
-    - assets/images/Search.png
-    - assets/images/SearchShade.png
-    - assets/images/Fav.png
-    - assets/images/FavShade.png
-    - assets/images/Add.png
-    - assets/images/pic_library.png
-    - assets/images/Menu.png
-    - assets/images/GridIcon.png
-    - assets/images/GridIconFade.png
-    - assets/images/TagsIcon.png
-    - assets/images/TagsIconShade.png
+    - assets/images/
+
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

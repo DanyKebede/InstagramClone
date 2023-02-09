@@ -115,4 +115,9 @@ class UserProfileProvider extends ChangeNotifier {
     }
     notifyListeners();
   }
+
+  void alterSuggestion(String username) {
+    suggestion.removeWhere((sug) => sug.fname == username);
+    notifyListeners();
+  }
 }

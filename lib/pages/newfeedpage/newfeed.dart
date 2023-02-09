@@ -14,6 +14,7 @@ class NewFeed extends StatefulWidget {
 class _NewFeedState extends State<NewFeed> {
   bool showfav = false;
   List<int> slider = FeedProvider().newfeeddata.map<int>((e) => 1).toList();
+
   @override
   Widget build(BuildContext context) {
     FeedProvider data = Provider.of<FeedProvider>(context, listen: false);

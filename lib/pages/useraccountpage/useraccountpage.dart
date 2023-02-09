@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:insta_clone/provider/userprofileprovider.dart';
+import 'package:insta_clone/services/firebase_auth.dart';
 import 'package:provider/provider.dart';
 
 import '../../models/userprofile.dart';
 import './discover.dart';
-import '../favPage.dart';
+//import '../favPage.dart';
 
 class UserAccountPage extends StatefulWidget {
   UserAccountPage({super.key});
@@ -46,7 +47,12 @@ class _UserAccountPageState extends State<UserAccountPage> {
             margin: const EdgeInsets.only(right: 18),
             width: 24,
             height: 24.5,
-            child: Image.asset('assets/images/Menu.png'),
+            child: InkWell(
+              onTap: () {
+                FirebaseAuthMethods().signOut(context);
+              },
+              child: Image.asset('assets/images/Menu.png'),
+            ),
           ),
         ],
       ),
@@ -111,7 +117,7 @@ class _UserAccountPageState extends State<UserAccountPage> {
                       ),
                     ],
                   ),
-                  toolbarHeight: 505,
+                  toolbarHeight: 525,
                   backgroundColor: Colors.white,
                 ),
               ];

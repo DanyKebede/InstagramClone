@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:insta_clone/pages/newfeedpage/instastory.dart';
 import 'package:gradient_borders/gradient_borders.dart';
+import 'package:insta_clone/services/firebase_auth.dart';
 import 'package:provider/provider.dart';
 
 import '../provider/userprofileprovider.dart';
@@ -38,6 +39,8 @@ class _TabsControllerState extends State<TabsController> {
 
   @override
   Widget build(BuildContext context) {
+    final loggedInUser =
+        Provider.of<FirebaseAuthMethods>(context, listen: false).user;
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
